@@ -1,7 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+// Pure - pipe is recalculated with any changes in the input field
 @Pipe({
-  name: 'filter'
+  name: 'filter',
+  pure: false
 })
 export class FilterPipe implements PipeTransform {
 
